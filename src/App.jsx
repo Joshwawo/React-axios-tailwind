@@ -45,8 +45,8 @@ function App() {
   console.log(habilidades);
 
   return (
-    <div className="App">
-      <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className=" ">
+      <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto">
         <img
           className="w-full"
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${numero}.png`}
@@ -90,12 +90,12 @@ function App() {
 
           {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span> */}
+      <button onClick={hanlerandom} className="bg-yellow-500 py-2 px-2">
+        Generar Pokemon Aleatorio
+      </button>
         </div>
       </div>
 
-      <button onClick={hanlerandom} className="bg-yellow-500 py-2 px-2 ">
-        Generar Pokemon Aleatorio
-      </button>
     </div>
   );
 }
